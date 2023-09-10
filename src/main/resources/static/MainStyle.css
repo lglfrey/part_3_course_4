@@ -1,0 +1,80 @@
+body {
+    background-color: #111; /* Тёмный цвет фона */
+}
+div
+{
+    color: #00cc00;
+    background-color: #111;
+}
+label {
+    color: #0c0; /* Тёмно-зелёный текст */
+    border: 0;
+    background-color: #111;
+}
+table {
+    background-color: #222; /* Тёмный цвет фона для таблицы */
+    border: 2px solid #0c0; /* Тёмно-зелёная граница */
+}
+input {
+    background-color: #111; /* Тёмный цвет фона */
+    color: #0c0; /* Тёмно-зелёный текст */
+    border: 2px solid #0c0; /* Тёмно-зелёная граница */
+}
+input:focus {
+    border-color: #0c0; /* Цвет границы при фокусе (клике) */
+    outline: none; /* Убираем стандартное браузерное подчёркивание */
+}
+button {
+    background-color: #222; /* Тёмный цвет фона для кнопок */
+    color: #0c0; /* Тёмно-зелёный текст */
+    border: 2px solid #0c0; /* Тёмно-зелёная граница */
+    transition: background-color 0.3s ease; /* Добавляем плавное изменение цвета фона */
+}
+button:hover {
+    background-color: #0c0; /* Светло-зелёный цвет фона при наведении */
+    color: #111; /* Тёмный цвет текста при наведении */
+}
+select {
+    background-color: #222;
+    color: #0c0;
+    border: 1px solid #0c0;
+    transition: background-color 0.3s ease;
+}
+select:hover {
+    background-color: #0c0;
+    color: #111;
+}
+select:focus {
+    border-color: #0c0;
+    outline: none;
+}
+td {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #00cc00;
+}
+tr
+{
+    color: #00cc00;
+}
+option {
+    background-color: #222;
+    color: #0c0;
+    border: 1px solid #0c0;
+}
+option:hover {
+    background-color: #0c0;
+    color: #111;
+    transition: background-color 0.3s ease;
+}
+table {
+    border-collapse: collapse;
+    background-color: #222;
+    border: 2px solid #0c0;
+}
+th
+{
+    color: #0c0;
+    background-color: #111; /* Цвет фона заголовков */
+}

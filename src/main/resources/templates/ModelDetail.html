@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="../static/MainStyle.css" rel="stylesheet" th:href="@{MainStyle.css}">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-bottom: 150px;
+        }
+        .button
+        {
+            width: 100%;
+            height: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+        }
+    </style>
+</head>
+<body>
+<table>
+    <form th:action="'/' + ${ModelName} + (${#strings.contains(ModelName, 'Create') ? '/Create/Submit' : '/Edit/Submit'})">
+        <thead>
+        <tr>
+            <th colspan="99" th:text="${ModelName}"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:each="fieldName : ${fieldNameList}" th:text="${fieldName}"></td>
+        </tr>
+        <tr>
+            <td th:each="fieldName, fieldNameind  : ${fieldNameList}">
+                <input th:name="${fieldNameind.index}" th:value="${fieldNameind.index}" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="99">
+                <button class="button" type="submit">Подтвердить</button>
+            </td>
+        </tr>
+        </tbody>
+    </form>
+</table>
+</body>
+</html>
